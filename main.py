@@ -25,7 +25,7 @@ num_gene = 10 # Gene on 1 chromosome
 
 # ------------
 min_list = []
-max_generation = 1200
+max_generation = 10
 min_fitness = 9999
 best_solution = np.zeros(num_chromo)
 
@@ -87,6 +87,9 @@ for generation in range(max_generation):
 Y = np.array([1, 1, 1, 2, 2, 2, 3, 3, 3])
 ypoints = np.array(min_list)
 #print(mean_fitness, np.mean(mean_fitness)) # Draw mean fitness of each generation
+
+
+# Visualize
 plt.figure(1)
 plt.plot(ypoints, color = 'Red')
 plt.xlabel('Generation') 
